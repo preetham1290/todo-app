@@ -1,0 +1,25 @@
+<section class="login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <a><b>Todo</b>App</a>
+    </div>
+    <div class="login-box-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+      <form [formGroup]="loginForm" novalidate>
+        <div class="form-group">
+          <label class="control-label">Username <em>*</em></label> <input type="text" class="form-control" formControlName="userName">
+          <div class="error" *ngIf="formErrors.userName">
+            <small class="error"> {{formErrors.userName}}</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password <em>*</em></label> <input type="password" class="form-control" formControlName="password">
+          <div class="error" *ngIf="formErrors.password">
+            <small class="error"> {{formErrors.password}}</small>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block text-uppercase" (click)="onSubmit()">Login</button>
+      </form>
+    </div>
+  </div>
+</section>

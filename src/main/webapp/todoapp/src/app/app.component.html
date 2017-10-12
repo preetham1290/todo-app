@@ -1,0 +1,6 @@
+<div *ngIf="isSpinnerRunning">
+    <sk-wave [isRunning]="isSpinnerRunning"></sk-wave>
+</div>
+<app-confirm></app-confirm>
+<simple-notifications [options]="options"></simple-notifications>
+<router-outlet></router-outlet>

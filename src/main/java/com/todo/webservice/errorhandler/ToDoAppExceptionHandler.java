@@ -9,6 +9,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class ToDoAppExceptionHandler {
 
+	@ExceptionHandler(value = { IllegalArgumentException.class })
+	@ResponseBody
+	public ResponseEntity<Message> illegalArgException(IllegalArgumentException exception) {
+		exception.printStackTrace();
+		Message errorMessage = Message.statusCode(HttpStatus.BAD_REQUEST).developerMsg(exception.getMessage())
+				.message(exception.getMessage()).exception(exception.getClass().getName()).build();
+		return new ResponseEntity<Message>(errorMessage, HttpStatus.BAD_REQUEST);
+	}
+
 	@ExceptionHandler(value = { Exception.class })
 	@ResponseBody
 	public ResponseEntity<Message> exception(Exception exception) {

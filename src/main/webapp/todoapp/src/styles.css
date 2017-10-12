@@ -1,0 +1,53 @@
+
+.custom-alert-feenalysis .error {
+	background: rgba(197, 20, 20, .7);
+}
+
+.custom-alert-feenalysis .success {
+	background: rgba(0, 128, 0, .7);
+}
+
+.custom-alert-feenalysis .warning {
+	background: #e8fb35;
+}
+
+.custom-alert-feenalysis .information {
+	background: #5c5c81;
+}
+
+.custom-alert-feenalysis {
+	background: #fff;
+	border-radius: 3px;
+}
+
+.simple-notification-wrapper {
+	position: fixed;
+	width: 300px;
+	z-index: 3000 !important;
+}
+.custom-alert-feenalysis .error {
+	background: rgba(197, 20, 20, .7);
+}
+
+.custom-alert-feenalysis .success {
+	background: rgba(0, 128, 0, .7);
+}
+
+.custom-alert-feenalysis .warning {
+	background: #e8fb35;
+}
+
+.custom-alert-feenalysis .information {
+	background: #5c5c81;
+}
+
+.custom-alert-feenalysis {
+	background: #fff;
+	border-radius: 3px;
+}
+
+.simple-notification-wrapper {
+	position: fixed;
+	width: 300px;
+	z-index: 3000 !important;
+}

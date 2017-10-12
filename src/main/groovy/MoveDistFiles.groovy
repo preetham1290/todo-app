@@ -53,7 +53,7 @@ def moveFilesFromDistToWebapp(srcPath,destPath) {
  *	User application specific build configuration
  */
 
-def src = "src/main/webapp/billingcare/dist"
+def src = "src/main/webapp/todoapp/dist"
 def dest = "src/main/webapp"
 
 updateBaseHref(src)

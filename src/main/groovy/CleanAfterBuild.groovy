@@ -8,4 +8,4 @@ def cleanFiles(src,distPath){
 	new File(distPath).deleteDir()
 }
 
-cleanFiles("src/main/webapp","src/main/webapp/billingcare/dist")
+cleanFiles("src/main/webapp","src/main/webapp/todoapp/dist")
